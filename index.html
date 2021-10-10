@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--Font Awesome icons-->
+        <script src="https://use.fontawesome.com/8eb416c9ed.js"></script>
+        <!--People-objects-->
+        <script type="text/javascript" src="../people/people.json"></script>
+        <!--Styling-->
+        <link rel="stylesheet" href="top.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="btm.css">
+    </head>
+
+    <body>
+        <!--Top banner-->
+        <div class="top">
+            <p>Etterkommere etter</p>
+            <h1>Augustinus P. O. Myren og Pernille K. N. Myren<h1>
+        </div>
+
+        <!--Top navigation bar-->
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div class="search-container">
+                <!--Nå sendes man til google.com...-->
+                <form action="https://google.com/search" method=GET>
+                    <input type="text" placeholder="Search..." name="search" id="search"/>
+                    <input type="hidden" name="sitesearch" value="https://per.no/" />
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <!--<input type="text" placeholder="Search.." name="search" id="search">
+                <button type="submit" onclick="search()">
+                    <i class="fa fa-search"></i>
+                </button>-->
+            </div>
+        </div>
+
+        <!--Family tree-->
+        <div class="main">
+            <h2>Slektstre</h2>
+
+            <div class="scrollable">
+                <div id="wrapper"><span class="label" id="1">
+                    <form action="../people/index.html" method=GET>
+                        <input type="hidden" name="id" value="1"/>
+                        <input type="submit" value="Root"/>
+                    </form></span>
+                    <div class="branch lv1">
+                        <div class="entry" id="2"><span class="label">
+                            <form action="../people/index.html" method=GET>
+                                <input type="hidden" name="id" value="1"/>
+                                <input type="submit" value="Entry-1"/>
+                            </form></span>
+                            <div class="branch lv2">
+                                <div class="entry"><span class="label">Entry-1-1</span>
+                                    <div class="branch lv3">
+                                        <div class="entry"><span class="label">Entry-1-1-1</span></div>
+                                        <div class="entry"><span class="label">Entry-1-1-2</span></div>
+                                    </div>
+                                </div>
+                                <div class="entry"><span class="label">Entry-1-2</span>
+                                    <div class="branch lv3">
+                                        <div class="entry sole"><span class="label">Entry-1-2-1</span></div>
+                                    </div>
+                                </div>
+                                <div class="entry"><span class="label">Entry-1-3</span>
+                                    <div class="branch lv3">
+                                        <div class="entry sole"><span class="label">Entry-1-3-1</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry"><span class="label">Entry-2</span></div>
+                        <div class="entry"><span class="label">Entry-3</span>
+                            <div class="branch lv2">
+                                <div class="entry"><span class="label">Entry-3-1</span>
+                                    <div class="branch lv3">
+                                        <div class="entry sole"><span class="label">Entry-3-1-1</span></div>
+                                    </div>
+                                </div>
+                                <div class="entry"><span class="label">Entry-3-2</span></div>
+                                <div class="entry"><span class="label">Entry-3-3</span>
+                                    <div class="branch lv3">
+                                        <div class="entry"><span class="label">Entry-3-3-1</span></div>
+                                        <div class="entry"><span class="label">Entry-3-3-2</span>
+                                            <div class="branch lv4">
+                                                <div class="entry"><span class="label">Entry-3-3-2-1</span></div>
+                                                <div class="entry"><span class="label">Entry-3-3-2-2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="entry"><span class="label">Entry-3-3-3</span></div>
+                                    </div>
+                                </div>
+                                <div class="entry"><span class="label">Entry-3-4</span></div>
+                            </div>
+                        </div>
+                        <div class="entry"><span class="label">Entry-4</span></div>
+                        <div class="entry"><span class="label">Entry-5</span>
+                            <div class="branch lv2">
+                                <div class="entry"><span class="label">Entry-5-1</span></div>
+                                <div class="entry"><span class="label">Entry-5-1</span></div>
+                            </div>
+                        </div>
+                        <div class="entry"><span class="label">Entry-6</span>
+                            <div class="branch lv2">
+                                <div class="entry sole"><span class="label">Entry-6-1</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Changing family tree names-->
+        <!--
+        <script>
+            // Setter inn navn for foreldrene
+            document.getElementById(1).innerHTML =
+                "<img src=\""+people[0].url+"\"></img><p>"
+                +people[0].firstName+" "+people[0].middleNameShort+" "+people[0].lastName
+                +" - "+people[1].firstName+" "+people[0].middleNameShort+" "+people[1].lastName+"</p>";
+            // Setter inn navn for barna
+            for (let i = 2; i < people.length; i++) {
+                var elem = document.getElementById(i);
+                elem.innerHTML = "<img src=\""+people[i].url+"\"></img><p>"+people[i].firstName+" "+people[i].middleNameShort+" "+people[i].lastName+"</p>";
+            }
+        </script>
+        -->
+
+        <!-- Function for when search-icon is clicked -->
+        <pre id="output"></pre>
+        <script>
+            function search() {
+                // Henter inputdata
+                var name = document.getElementById("search").value;
+                // finn personen som ligner
+                var file = document.querySelector('input').files[0];//"test.txt"//this.files[0];
+                //document.querySelector('input').files[0];
+                var reader = new FileReader();
+                reader.onload = function(/*progressEvent*/){
+                    //console.log(this.result);
+                    document.getElementById('output').textContent=reader.result;
+                };
+                reader.readAsText(file);
+                // send oss til personens side
+                // eller gi feilmeldingn
+            }
+        </script>
+
+
+        <!--Bottom part-->
+        <div class="btm">
+
+        </div>
+
+
+    </body>
+</html>

@@ -1,2 +1,0 @@
-# slektstre.github.io
-Slektstreprosjekt
