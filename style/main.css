@@ -10,9 +10,12 @@
 }
 
 .main {
-	width: calc(100% - 60px);
-	margin-left: 30px;
-	margin-top: 15px;
+	position:fixed;
+    top: calc(15vh + 48px); /*top+nav*/
+    left: 0px;/*30px;*/
+    width: 100%;/*calc(100% - 60px);*/
+	background-color: white;
+	padding: 15px 30px 15px 30px;
 }
 
 .main h2 {
@@ -20,6 +23,7 @@
 }
 
 .scrollable {
+	max-height: calc(60vh - 15px);
 	overflow: auto;
 }
 

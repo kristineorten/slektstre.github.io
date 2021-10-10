@@ -1,16 +1,19 @@
 /*Defining color palette*/
 :root {
+    --light-grey: #eaece5; /*almost white*/
+    /*unused:*/
+    --line-color: #09110f; /*almost black*/
     --dark: #1b312e; /*dark*/
     --dark-blue: #36635d;
     --mid-blue: #8ac1b8;
     --light-blue: #c0ded9;
-    --light-grey: #eaece5; /*almost white*/
-    /*unused:*/
-    --line-color: #09110f; /*almost black*/
 }
 
 .btm {
-    height: 15vh;
-    background-color: var(--dark);
     color: var(--light-grey);
+    position: fixed;
+    top: calc(85vh + 30px);
+    left: 15px;
+    width: 100%;
+    text-align: center;
 }
