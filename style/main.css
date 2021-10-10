@@ -27,10 +27,11 @@
 /*Tree*/
 input[type=submit] {
     border: 0 none; /*Remove border*/
-    background-color: blue;/*white;*/ /*CHANGE BACK*/
+    background-color: white;/*blue;*/
     color: var(--line-color);/*Text color*/
     font: 16px serif;/*Verdana, sans-serif;*/
 	/*width: 100px;*/
+	min-width: 125px;
 }
 
 input[type=submit]:hover {
