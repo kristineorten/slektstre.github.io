@@ -1,0 +1,14 @@
+/*Defining color palette*/
+:root {
+    --dark: #1b312e; /*dark*/
+    --dark-blue: #36635d;
+    --mid-blue: #8ac1b8;
+    --light-blue: #c0ded9;
+    --light-grey: #eaece5; /*almost white*/
+    /*unused:*/
+    --line-color: #09110f; /*almost black*/
+}
+
+body {
+    background-color: var(--dark);
+}
