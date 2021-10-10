@@ -6,14 +6,14 @@ people[0] = {
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:null, fatherBiological:null, otherMother:null, otherFather:null,
     children:[], married:true, spouse:null, marriedYear:0, city:null, sex:"M",
-    url:"../img/test.jpg", infoText:""};
+    img_url:"img/test.jpg", infoText:""};
 people[1] = {
     firstName:"Pernille", middleName:"", lastName:"Myren",
     middleNameShort:"K. N.", nickname:"", lastNameFromBirth:"",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:null, fatherBiological:null, otherMother:null, otherFather:null,
     children:[], married:true, spouse:people[0], marriedYear:0, city:null, sex:"F",
-    url:"../img/test.jpg", infoText:""};
+    img_url:"../img/test.jpg", infoText:""};
 people[0].spouse = people[1];
 
 people[2] = {
@@ -22,84 +22,84 @@ people[2] = {
     yearBorn:1971, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:null, married:false, spouse:null, marriedYear:0, city:"Oslo/Lillestrøm", sex:"F",
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[3] = {
     firstName:"Nikolaja", middleName:"Johanne", lastName:"Børresen",
     middleNameShort:"J.", nickname:["Nikolina", "Nikki"], lastNameFromBirth:"Myren",
     yearBorn:1873, yearBornSource:"", yearDied:1962, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:[], married:true, spouse:"Olai (Ole) Kornelius Andreas Børresen", marriedYear:0, city:["Nesbø","Mulehamn, Bremanger"],
-    url:"", sex:"F", infoText:"", infoSource:"Bremanger Bygdebok"};
+    img_url:"", sex:"F", infoText:"", infoSource:"Bremanger Bygdebok"};
 people[4] = {
     firstName:"Olai", middleName:"Henrik", lastName:"Myren",
     middleNameShort:"H.", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1874, yearBornSource:"", yearDied:1875, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:null, married:false, spouse:null, marriedYear:0, city:null, sex:"M",
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[5] = {
     firstName:"Amalie", middleName:"Oline", lastName:"Nødseth",
     middleNameShort:"O.", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1879, yearBornSource:"", yearDied:1957, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:[], married:true, spouse:"Kornelius Desiderius Tore Johan Eliasson Nødseth", marriedYear:1895, city:"Nødset gard",
-    url:"", sex:"F", infoText:""};
+    img_url:"", sex:"F", infoText:""};
 people[6] = {
     firstName:"August", middleName:"Peter", lastName:"",
     middleNameShort:"P.", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1880, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:[], married:true, spouse:"Anna Davidsdatter", marriedYear:1911, city:null, sex:"M",
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[7] = {
     firstName:"Jakob", middleName:"Johan Elias", lastName:"Myren",
     middleNameShort:"J. E.", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1881, yearBornSource:"", yearDied:1883, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:null, married:false, spouse:null, marriedYear:0, city:null, sex:"M",
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[8] = {
     firstName:"Johanna", middleName:"Marie", lastName:"Sørtun",
     middleNameShort:"M.", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1884, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:[], married:true, spouse:"", marriedYear:0, city:"Haugesund", sex:"F",
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[9] = {
-    firstName:"Petrine", middleName:"", lastName:"Berg? (Nødsæter)",
+    firstName:"Petrine", middleName:"", lastName:"Berg?",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1885, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
     children:[], married:true, spouse:["Nils Eliasson Nødsæter","[Ukjent] Berg"], marriedYear:[0,0], city:"Nødset gard",
-    url:"", sex:"F", infoText:""};
+    img_url:"", sex:"F", infoText:""};
 people[10] = {
     firstName:"Hanna", middleName:"", lastName:"",
-    middleNameShort:"", nickname:"", lastNameFromBirth:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1885, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
-    children:[], city:null, sex:"F",
-    url:"", infoText:""};
+    children:[], married:null, spouse:null, marriedYear:0, city:null, sex:"F",
+    img_url:"", infoText:""};
 people[11] = {
-    firstName:"Ragna", middleName:"", lastName:"",
-    middleNameShort:"", nickname:"", lastNameFromBirth:"",
+    firstName:"Ragna", middleName:"Susanne Karianne", lastName:"Dalseth",
+    middleNameShort:"S. K.", nickname:"", lastNameFromBirth:"Myren",
     yearBorn:1890, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
-    children:[], city:null, sex:"F",
-    url:"", infoText:""};
+    children:[], married:null, spouse:"Martin Rasmusson Dalseth", marriedYear:0, city:["Haugesund", "Dalseth, Hjelmelandsdalen"], sex:"F",
+    img_url:"", infoText:""};
 people[12] = {
-    firstName:"Olav", middleName:"Kornelius", lastName:"",
-    middleNameShort:"K.", nickname:"", lastNameFromBirth:"",
-    yearBorn:1893, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    firstName:"Olav", middleName:"Kornelius", lastName:"Myren",
+    middleNameShort:"K.", nickname:"", lastNameFromBirth:"Myren",
+    yearBorn:1893, yearBornSource:"", yearDied:1924, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
-    children:[], city:null, sex:"M",
-    url:"", infoText:""};
+    children:[], married:true, spouse:"", marriedYear:0, city:null, sex:"M",
+    img_url:"", infoText:""};
 people[13] = {
-    firstName:"Aletta", middleName:"Isalene Helene", lastName:"",
-    middleNameShort:"I. H.", nickname:"", lastNameFromBirth:"",
-    yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    firstName:"Aletta", middleName:"Isalene Helene", lastName:"Fetsund",
+    middleNameShort:"I. H.", nickname:"", lastNameFromBirth:"Myren",
+    yearBorn:1876, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
     motherBiological:people[1], fatherBiological:people[0], otherMother:null, otherFather:null,
-    children:[], city:null, sex:"F",
-    url:"", infoText:""};
+    children:[], married:null, spouse:"Taraldsen Jansen Fetsund", marriedYear:0, city:null, sex:"F",
+    img_url:"", infoText:""};
 people[0].children = [people[2],people[3],people[4],people[5],people[6],people[7],
                         people[8],people[9],people[10],people[11],people[12],people[13]];
 people[1].children = [people[2],people[3],people[4],people[5],people[6],people[7],
@@ -111,35 +111,35 @@ people[14] = {
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[3], fatherBiological:"Olai (Ole) Kornelius Andreas Børresen", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[15] = {
     firstName:"[Ukjent2]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Børresen",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[3], fatherBiological:"Olai (Ole) Kornelius Andreas Børresen", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[16] = {
     firstName:"[Ukjent3]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Børresen",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[3], fatherBiological:"Olai (Ole) Kornelius Andreas Børresen", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[17] = {
     firstName:"[Ukjent4]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Børresen",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[3], fatherBiological:"Olai (Ole) Kornelius Andreas Børresen", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[18] = {
     firstName:"[Ukjent5]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Børresen",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[3], fatherBiological:"Olai (Ole) Kornelius Andreas Børresen", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[3].children = [people[14],people[15],people[16],people[17],people[18]];
 
 people[19] = {
@@ -148,105 +148,105 @@ people[19] = {
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[20] = {
     firstName:"[Ukjent2]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[21] = {
     firstName:"[Ukjent3]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[22] = {
     firstName:"[Ukjent4]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[23] = {
     firstName:"[Ukjent5]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[24] = {
     firstName:"[Ukjent6]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[25] = {
     firstName:"[Ukjent7]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[26] = {
     firstName:"[Ukjent8]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[27] = {
     firstName:"[Ukjent9]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[28] = {
     firstName:"[Ukjent10]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[29] = {
     firstName:"[Ukjent11]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[30] = {
     firstName:"[Ukjent12]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[31] = {
     firstName:"[Ukjent13]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[32] = {
     firstName:"[Ukjent14]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[33] = {
     firstName:"[Ukjent15]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødseth",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[5], fatherBiological:"Kornelius Desiderius Tore Johan Eliasson Nødseth", otherMother:null, otherFather:null,
     children:[], city:null, sex:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 
 people[5].children = [people[19],people[20],people[21],people[22],people[23],
                     people[24],people[25],people[26],people[27],people[28],
@@ -258,7 +258,7 @@ people[34] = {
     yearBorn:1911, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:"Anna Davidsdatter", fatherBiological:people[6], otherMother:null, otherFather:null,
     children:[], city:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[6].children = [people[34]];
 
 people[35] = {
@@ -267,26 +267,80 @@ people[35] = {
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[9], fatherBiological:"Nils Eliasson Nødsæter", otherMother:null, otherFather:null,
     children:[], city:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[36] = {
     firstName:"[Ukjent2]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødsæter",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[9], fatherBiological:"Nils Eliasson Nødsæter", otherMother:null, otherFather:null,
     children:[], city:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[37] = {
     firstName:"[Ukjent3]", middleName:"", lastName:"",
     middleNameShort:"", nickname:"", lastNameFromBirth:"Nødsæter",
     yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[9], fatherBiological:"Nils Eliasson Nødsæter", otherMother:null, otherFather:null,
     children:[], city:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[38] = {
     firstName:"Asbjørn", middleName:"Nikolai", lastName:"",
     middleNameShort:"N.", nickname:"", lastNameFromBirth:"Berg",
     yearBorn:1914, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:null,
     motherBiological:people[9], fatherBiological:"[Ukjent] Berg", fatherBiologicalSource:"Bremanger Bygdebok (II?)", otherMother:null, otherFather:null,
     children:[], city:null,
-    url:"", infoText:""};
+    img_url:"", infoText:""};
 people[9].children = [people[35],people[36],people[37],people[38]];
+
+people[39] = {
+    firstName:"Gudrun", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Dalseth",
+    yearBorn:1919, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:people[11], fatherBiological:"Martin Rasmusson Dalseth", otherMother:null, otherFather:null,
+    children:[], married:true, spouse:"Karsten Olson Dalset", marriedYear:0, city:"Eid", sex:"F",
+    img_url:"", infoText:""};
+people[11].children = [people[39]];
+
+people[40] = {
+    firstName:"Gudrun", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Myren",
+    yearBorn:1914, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:"", fatherBiological:people[12], otherMother:null, otherFather:null,
+    children:[], married:null, spouse:"", marriedYear:0, city:null, sex:"F",
+    img_url:"", infoText:""};
+people[41] = {
+    firstName:"Arvid", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Myren",
+    yearBorn:1915, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:"", fatherBiological:people[12], otherMother:null, otherFather:null,
+    children:[], married:null, spouse:"", marriedYear:0, city:null, sex:"M",
+    img_url:"", infoText:""};
+people[12].children = [people[40],people[41]];
+
+people[42] = {
+    firstName:"[Ukjent1]", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Fetsund",
+    yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:people[13], fatherBiological:"Taraldsen Jansen Fetsund", otherMother:null, otherFather:null,
+    children:[], married:null, spouse:"", marriedYear:0, city:null, sex:null,
+    img_url:"", infoText:""};
+people[43] = {
+    firstName:"[Ukjent2]", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Fetsund",
+    yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:people[13], fatherBiological:"Taraldsen Jansen Fetsund", otherMother:null, otherFather:null,
+    children:[], married:null, spouse:"", marriedYear:0, city:null, sex:null,
+    img_url:"", infoText:""};
+people[44] = {
+    firstName:"[Ukjent3]", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Fetsund",
+    yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:people[13], fatherBiological:"Taraldsen Jansen Fetsund", otherMother:null, otherFather:null,
+    children:[], married:null, spouse:"", marriedYear:0, city:null, sex:null,
+    img_url:"", infoText:""};
+people[45] = {
+    firstName:"[Ukjent4]", middleName:"", lastName:"",
+    middleNameShort:"", nickname:"", lastNameFromBirth:"Fetsund",
+    yearBorn:0, yearBornSource:"", yearDied:0, yearDiedSource:"", dead:true,
+    motherBiological:people[13], fatherBiological:"Taraldsen Jansen Fetsund", otherMother:null, otherFather:null,
+    children:[], married:null, spouse:"", marriedYear:0, city:null, sex:null,
+    img_url:"", infoText:""};
