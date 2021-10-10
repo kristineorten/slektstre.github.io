@@ -25,13 +25,22 @@
 
 
 /*Tree*/
+span img {
+	height: auto;
+    width: auto;
+    max-width: 125px;
+    max-height: 300px;
+}
+
 input[type=submit] {
     border: 0 none; /*Remove border*/
     background-color: white;/*blue;*/
     color: var(--line-color);/*Text color*/
     font: 16px serif;/*Verdana, sans-serif;*/
-	/*width: 100px;*/
-	min-width: 125px;
+	max-width: 125px;
+	white-space: normal;
+	/*word-wrap: break-word;*/
+	overflow-wrap: break-word;
 }
 
 input[type=submit]:hover {
