@@ -1,0 +1,140 @@
+:root {
+	--line-color: #09110f; /*almost black*/
+	/*unused:*/
+    --dark: #1b312e;
+    --dark-blue: #36635d;
+    --mid-blue: #8ac1b8;
+    --light-blue: #c0ded9;
+	--super-light-blue: #eef6f5;
+    --light-grey: #eaece5; /*almost white*/
+}
+
+.main {
+	width: calc(100% - 60px);
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+.main h2 {
+	font-size: 2em;
+}
+
+.scrollable {
+	overflow: auto;
+}
+
+
+/*Tree*/
+input[type=submit] {
+    border: 0 none; /*Remove border*/
+    background-color: blue;/*white;*/ /*CHANGE BACK*/
+    color: var(--line-color);/*Text color*/
+    font: 16px serif;/*Verdana, sans-serif;*/
+	/*width: 100px;*/
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+/*CSS fra https://codepen.io/kachibito/pen/gZOxvJ
+minimal changes*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 50px;
+  color: var(--line-color);/*Text color #eee9dc;
+  /*font: 16px Verdana, sans-serif;
+  background-color: var(--light-grey); /*#2e6ba7;
+  user-select: none;
+}*/
+
+#wrapper {
+  position: relative;
+}
+
+.branch {
+  position: relative;
+  margin-left: 250px;
+}
+.branch:before {
+  content: "";
+  width: 50px;
+  border-top: 2px solid var(--line-color);/*høyre, vannrett linje #eee9dc;*/
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.entry {
+  position: relative;
+  min-height: 60px;
+}
+.entry:before {
+  content: "";
+  height: 100%;
+  border-left: 2px solid var(--line-color);/*Høyre, loddrett linje #eee9dc;*/
+  position: absolute;
+  left: -50px;
+}
+.entry:after {
+  content: "";
+  width: 50px;
+  border-top: 2px solid var(--line-color);/*Venstre, vannrett linje #eee9dc;*/
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  margin-top: 1px;
+}
+.entry:first-child:before {
+  width: 10px;
+  height: 50%;
+  top: 50%;
+  margin-top: 2px;
+  border-radius: 10px 0 0 0;
+}
+.entry:first-child:after {
+  height: 10px;
+  border-radius: 10px 0 0 0;
+}
+.entry:last-child:before {
+  width: 10px;
+  height: 50%;
+  border-radius: 0 0 0 10px;
+}
+.entry:last-child:after {
+  height: 10px;
+  border-top: none;
+  border-bottom: 2px solid var(--line-color);/*Siste venstre vannrette linje #eee9dc;*/
+  border-radius: 0 0 0 10px;
+  margin-top: -9px;
+}
+.entry.sole:before {
+  display: none;
+}
+.entry.sole:after {
+  width: 50px;
+  height: 0;
+  margin-top: 1px;
+  border-radius: 0;
+}
+
+.label {
+  display: block;
+  min-width: 150px;
+  padding: 5px 10px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid var(--line-color);/*Linje rundt boksene #eee9dc;*/
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+}
