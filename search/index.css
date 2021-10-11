@@ -1,0 +1,48 @@
+/*Defining color palette*/
+:root {
+	--line-color: #09110f; /*almost black*/
+    --dark: #1b312e;
+    --dark-blue: #36635d;
+    --mid-blue: #8ac1b8;
+    --light-blue: #c0ded9;
+	--super-light-blue: #eef6f5;
+    --light-grey: #eaece5; /*almost white*/
+}
+
+/*Main*/
+.main {
+    padding: 15px 30px;
+	position:fixed;
+    top: calc(15vh + 48px); /*top+nav*/
+    left: 0px;/*30px;*/
+    width: 100%;/*calc(100% - 60px);*/
+	background-color: white;
+}
+
+.main h2 {
+	font-size: 2em;
+}
+
+.main h3 {
+	font-size: 1.5em;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.scrollable {
+	max-height: calc(60vh - 15px);
+    overflow: auto;
+}
+
+/*Bottom*/
+.btm {
+    background-color: var(--dark);
+    color: var(--light-grey);
+    position: fixed;
+    top: calc(85vh + 15px);
+    left: 0;
+    padding: 15px 15px;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+}
