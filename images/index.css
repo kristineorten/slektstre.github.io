@@ -14,6 +14,12 @@
 }
 
 .main img {
+    /*Skalerer*/
     max-width: 80%;
-    margin-left: calc(10% - 15px);
+    max-height: 70vh;/*calc(85vh - 48px);*/
+    /*Sentrerer*/
+    display: block;
+    margin: 0; /*Fjerner de 15px margin som er der fra før*/
+    margin-left: auto;
+    margin-right: auto;
 }
