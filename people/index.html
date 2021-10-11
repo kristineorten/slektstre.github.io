@@ -9,20 +9,23 @@
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/btm.css">
         <link rel="stylesheet" href="index.css">
+        <!--Scripts-->
+        <script src="../functions.js"></script>
+        <script src="../data/people.json"></script>
     </head>
 
     <body>
         <div class="top-part">
             <!--Top banner-->
             <div class="top">
-                <p>Etterkommere etter</p>
-                <h1>Augustinus P. O. Myren og Pernille K. N. Myren</h1>
+                <p>Etterkommer:</p>
+                <h1 id="header">Navn</h1>
             </div>
 
             <!--Top navigation bar-->
             <div class="topnav">
                 <a href="../index.html">Hjem</a>
-                <a class="active" href="#images">Bilder</a>
+                <a href="../images/index.html">Bilder</a>
                 <a href="#contact">Kontakt oss</a>
                 <div class="search-container">
                     <form action="../search/index.html">
@@ -36,13 +39,8 @@
         </div>
 
         <div class="scrollable">
-            <div class="main" id="images">
-                <h2>Bilder</h2>
-                <p> Her er gruppebilder og slektstrær som ikke passet inn på de andre sidene.</p>
-                <h3>Etterkommere etter Jenny og Anders</h3>
-                <img src="../img/etterkommereJennyOgAnders.jpg">
-                <h3>Etterkommere etter Kjell og Solbjørg</h3>
-                <img src="../img/etterkommereKjellOgSolbjorg.jpg">
+            <div class="main">
+                <p id="write">My first paragraph.</p>
             </div>
 
             <!--Bottom part-->
@@ -53,5 +51,14 @@
                 </p>
             </div>
         </div>
+
+        <!--Get id and change elems-->
+        <script>
+            var elem = document.getElementById("write");
+            var id = location.search.split("=")[1];
+            elem.innerHTML = "Denne personen har id: "+id;
+            var name = getName_Full(id);
+            document.getElementById("header").innerHTML = name;
+        </script>
     </body>
 </html>
