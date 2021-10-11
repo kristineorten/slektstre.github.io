@@ -48,7 +48,7 @@
                     var searchword = location.search.split("=")[1].toLowerCase()
 
                     if (searchword.length > 15) {
-                        document.getElementById("res").innerHTML = " for søk på \""+searchword+"\":";
+                        document.getElementById("res").innerHTML = " for søk på \""+searchword+"\":<br>";
                     } else {
                         document.getElementById("header").innerHTML += " for \""+searchword+"\"";
                     }
