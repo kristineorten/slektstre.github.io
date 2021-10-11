@@ -6,18 +6,73 @@
         <script src="https://use.fontawesome.com/8eb416c9ed.js"></script>
         <!--Styling-->
         <link rel="stylesheet" href="../style/top.css">
-        <link rel="stylesheet" href="../style/main.css">
-        <link rel="stylesheet" href="../style/btm.css">
-        <!--<link rel="stylesheet" href="index.css">-->
+        <!--<link rel="stylesheet" href="../style/main.css">-->
+        <!--<link rel="stylesheet" href="../style/btm.css">-->
+        <link rel="stylesheet" href="index.css">
+        <!--Scripts-->
+        <script src="../functions.js"></script>
+        <script src="../data/people.json"></script>
     </head>
 
     <body>
+        <div class="top-part">
+            <!--Top banner-->
+            <div class="top">
+                <p>Etterkommere etter</p>
+                <h1>Augustinus P. O. Myren og Pernille K. N. Myren<h1>
+            </div>
 
-        <h2>Hello world</h2>
-        <div class="search-res">
-            <script async src="https://cse.google.com/cse.js?cx=a3881313cb096be66"></script>
-            <div class="gcse-searchresults-only"></div>
+            <!--Top navigation bar-->
+            <div class="topnav">
+                <a href="../index.html">Hjem</a>
+                <a class="active" href="#images">Bilder</a>
+                <a href="#contact">Kontakt oss</a>
+                <div class="search-container">
+                    <form action="../search/index.html">
+                        <input type="text" placeholder="Søk..." name="name" id="search"/>
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
 
+        <div class="scrollable">
+            <div class="main">
+                <h2 id="header">Søkeresultater</h2>
+                <div class="searchresults" id="res">Resultater<br></div>
+                <script>
+                    var elem = document.getElementById("res");
+                    var searchword = location.search.split("=")[1].toLowerCase()
+
+                    if (searchword.length > 15) {
+                        document.getElementById("res").innerHTML = " for søk på \""+searchword+"\":";
+                    } else {
+                        document.getElementById("header").innerHTML += " for \""+searchword+"\"";
+                    }
+
+                    searchword_lst = searchword.split("+");
+
+                    //Looping through data to find people:
+                    for (let id = 0; id < people.length; id++) {
+                        for (let t = 0; t < searchword_lst.length; t++) {
+                            if (getName_Full(id).toLowerCase().includes(searchword_lst[t])) {
+                                elem.innerHTML += "<a href='../people/index.html?id="+id+"'>"
+                                +getName_Full(id)+": "+getYears_BornAndDied(id)+"</a><br>";
+                            }
+                        }
+                    }
+                </script>
+            </div>
+
+            <!--Bottom part-->
+            <div class="btm" id="contact">
+                <p>
+                    <br>Kristine Fjellkårstad Orten<br>
+                    <br>kristine.orten@gmail.com
+                </p>
+            </div>
+        </div>
     </body>
 </html>
