@@ -1,0 +1,19 @@
+/*Defining color palette*/
+:root {
+	--line-color: #09110f; /*almost black*/
+    --dark: #1b312e;
+    --dark-blue: #36635d;
+    --mid-blue: #8ac1b8;
+    --light-blue: #c0ded9;
+	--super-light-blue: #eef6f5;
+    --light-grey: #eaece5; /*almost white*/
+}
+
+.main h2 {
+    padding: 15px 0;
+}
+
+.main img {
+    max-width: 80%;
+    margin-left: calc(10% - 15px);
+}

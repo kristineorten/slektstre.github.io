@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--Font Awesome icons-->
+        <script src="https://use.fontawesome.com/8eb416c9ed.js"></script>
+        <!--Styling-->
+        <link rel="stylesheet" href="../style/top.css">
+        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/btm.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="top-part">
+            <!--Top banner-->
+            <div class="top">
+                <p>Etterkommere etter</p>
+                <h1>Augustinus P. O. Myren og Pernille K. N. Myren<h1>
+            </div>
+
+            <!--Top navigation bar-->
+            <div class="topnav">
+                <a href="../index.html">Hjem</a>
+                <a class="active" href="#images">Bilder</a>
+                <a href="#contact">Kontakt oss</a>
+                <div class="search-container">
+                    <!--Nå sendes man til google.com...-->
+                    <form action="https://google.com/search" method=GET>
+                        <input type="text" placeholder="Search..." name="search" id="search"/>
+                        <input type="hidden" name="sitesearch" value="https://per.no/" />
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                    <!--<input type="text" placeholder="Search.." name="search" id="search">
+                    <button type="submit" onclick="search()">
+                        <i class="fa fa-search"></i>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollable">
+            <div class="main" id="images">
+                <h2>Bilder</h2>
+                <p> Her er gruppebilder og slektstrær som ikke passet inn på de andre sidene.</p>
+                <h3>Etterkommere etter Jenny og Anders</h3>
+                <img src="../img/etterkommereJennyOgAnders.jpg">
+                <h3>Etterkommere etter Kjell og Solbjørg</h3>
+                <img src="../img/etterkommereKjellOgSolbjorg.jpg">
+            </div>
+
+            <!--Bottom part-->
+            <div class="btm" id="contact">
+                <p>
+                    <br>Kristine Fjellkårstad Orten<br>
+                    <br>kristine.orten@gmail.com
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
