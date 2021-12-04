@@ -12,6 +12,25 @@ function getName_FirstAndMiddleShort(id) {
     return name.trim();
 }
 
+// Functions for name based on tree-placement
+function treeId_to_Id(treeId) {
+    for (let i = 2; i < people.length; i++) {
+        if (people[i].tree_id == treeId) {
+            return i;
+        }
+    }
+    return null;
+}
+function getName_Full_treeId(treeId) {
+    return getName_Full(treeId_to_Id(treeId));
+}
+function getName_AlmostFull_treeId(treeId) {
+    return getName_AlmostFull_treeId(treeId_to_Id(treeId));
+}
+function getName_FirstAndMiddleShort_treeId(treeId) {
+    return getName_FirstAndMiddleShort_treeId(treeId_to_Id(treeId));
+}
+
 // Functions for images
 function getMainImg(id) {
     return people[id].img_url[0];
