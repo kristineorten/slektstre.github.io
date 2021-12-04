@@ -31,6 +31,7 @@ https://kristineorten.github.io/slektstre.github.io/search/index.html?name=hanna
 
 ## ToDo
 Mangler mange personer
+
 Endringen av id --> gå til personlige sider fungerer ikke
 
 Husk å endre overgang søkeside --> personlige sider
