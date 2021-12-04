@@ -427,7 +427,7 @@
                         </div>
                         <div class="entry"><span class="label">
                             <form action="../people/index.html" method=GET id="11">
-                                <input type="hidden" name="id" value="1.10"/>
+                                <input type="hidden" name="id" value="1-10"/>
                                 <input type="submit" name="submit" value="Entry-10"/>
                             </form></span>
                             <div class="branch lv2">
@@ -503,7 +503,8 @@
                 getName_FirstAndMiddleShort(0)+" og "+getName_AlmostFull(1);
             document.getElementById(1).innerHTML =
                 "<img src=\""+getMainImg(0)+"\"></img><p>"+
-                document.getElementById(1).innerHTML
+                "<i class='fa fa-star'></i><p>"+
+                document.getElementById(1).innerHTML;
 
             // Setter inn navn for barna
             for (let i = 2; i < people.length; i++) {
@@ -518,7 +519,7 @@
                 }
 
                 if (dead) {
-                    elem.innerHTML = "<i class='fa fa-star'></i>"+elem.innerHTML;
+                    elem.innerHTML = "<i class='fa fa-star'></i><p>"+elem.innerHTML;
                 }
                 /*<div style='max-width:125px; overflow-wrap:break-word;'>"
                 +getName_AlmostFull(i)+"</div>*/
