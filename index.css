@@ -70,6 +70,10 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
+.dead {
+  background-color: black; /*var(--light-grey:);*/
+}
+
 /*CSS fra https://codepen.io/kachibito/pen/gZOxvJ
 minimal changes*/
 
