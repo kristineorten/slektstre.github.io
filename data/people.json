@@ -1298,7 +1298,7 @@ people = [
     {
         id:48,
         tree_id:"1-9-1-2",
-        firstName:"John",
+        firstName:"Jon",
         middleName:"",
         lastName:"Fjellkårstad",
         middleNameShort:"",
@@ -1461,7 +1461,7 @@ people = [
         id:54,
         tree_id:"1-9-1-1-1",
         firstName:"Einar",
-        middleName:"",
+        middleName:"Erling",
         lastName:"Fjellkårstad",
         middleNameShort:"",
         nickname:"",
@@ -1488,7 +1488,7 @@ people = [
         id:55,
         tree_id:"1-9-1-1-2",
         firstName:"Jorid",
-        middleName:"",
+        middleName:"Åsa",
         lastName:"Grytten",
         middleNameShort:"",
         nickname:"",
@@ -1514,8 +1514,8 @@ people = [
     {
         id:56,
         tree_id:"1-9-1-1-3",
-        firstName:"Anders",
-        middleName:"Jan",
+        firstName:"Anders-Jan",
+        middleName:"",
         lastName:"Fjellkårstad",
         middleNameShort:"",
         nickname:"",
@@ -1542,7 +1542,7 @@ people = [
         id:57,
         tree_id:"1-9-1-2-1",
         firstName:"Arve",
-        middleName:"",
+        middleName:"Einar",
         lastName:"Fjellkårstad",
         middleNameShort:"",
         nickname:"",
@@ -1569,7 +1569,7 @@ people = [
         id:58,
         tree_id:"1-9-1-2-2",
         firstName:"Sissel",
-        middleName:"",
+        middleName:"Janne",
         lastName:"Fjellkårstad",
         middleNameShort:"",
         nickname:"",
@@ -1623,7 +1623,7 @@ people = [
         id:60,
         tree_id:"1-9-1-2-4",
         firstName:"Edmund",
-        middleName:"",
+        middleName:"Bjarte",
         lastName:"Fjellkårstad",
         middleNameShort:"",
         nickname:"",
@@ -1704,7 +1704,7 @@ people = [
         id:63,
         tree_id:"1-9-1-4-3",
         firstName:"Thor",
-        middleName:"Andre",
+        middleName:"André",
         lastName:"Fjellkårstad",
         middleNameShort:"",
         nickname:"",
@@ -1815,7 +1815,7 @@ people = [
         middleName:"Roger",
         lastName:"",
         middleNameShort:"",
-        nickname:"Jan Roger (fødselsnavn)",
+        nickname:"Jan Roger (født)",
         lastNameFromBirth:null,
         yearBorn:1987,
         yearBornSource:null,
@@ -1842,7 +1842,7 @@ people = [
         middleName:"",
         lastName:"",
         middleNameShort:"",
-        nickname:"Bjørg Helen (fødselsnavn)",
+        nickname:"Bjørg Helen (født)",
         lastNameFromBirth:null,
         yearBorn:null,
         yearBornSource:null,
@@ -1892,7 +1892,7 @@ people = [
     {
         id:70,
         tree_id:"1-9-1-1-2-2",
-        firstName:"Kristian",
+        firstName:"Christian",
         middleName:"",
         lastName:"Grytten",
         middleNameShort:"",
@@ -1973,7 +1973,7 @@ people = [
     {
         id:73,
         tree_id:"1-9-1-1-3-2",
-        firstName:"Kristoffer?",
+        firstName:"Kristoffer",
         middleName:"",
         lastName:"Fjellkårstad",
         middleNameShort:"",
@@ -2268,7 +2268,7 @@ people = [
         infoText:""
     },
     {
-        id:83,
+        id:84,
         tree_id:"1-9-1-4-2-1",
         firstName:"Johnny",
         middleName:"Hørven",
@@ -2295,7 +2295,7 @@ people = [
         infoText:""
     },
     {
-        id:84,
+        id:85,
         tree_id:"1-9-1-4-2-2",
         firstName:"Michael",
         middleName:"Hørven",
@@ -2322,7 +2322,7 @@ people = [
         infoText:""
     },
     {
-        id:85,
+        id:86,
         tree_id:"1-9-1-4-2-3",
         firstName:"Sylvia",
         middleName:"Hørven",
@@ -2349,7 +2349,7 @@ people = [
         infoText:""
     },
     {
-        id:86,
+        id:87,
         tree_id:"1-9-1-4-3-1",
         firstName:"Ada",
         middleName:"Bergum",
@@ -2376,7 +2376,7 @@ people = [
         infoText:""
     },
     {
-        id:87,
+        id:88,
         tree_id:"1-9-1-4-3-2",
         firstName:"Magnus",
         middleName:"Bergum",
@@ -2403,7 +2403,7 @@ people = [
         infoText:""
     },
     {
-        id:88,
+        id:89,
         tree_id:"1-9-1-4-3-3",
         firstName:"Gustav",
         middleName:"Bergum",
@@ -2430,7 +2430,7 @@ people = [
         infoText:""
     },
     {
-        id:89,
+        id:90,
         tree_id:"1-9-1-6-2-1",
         firstName:"Emilie",
         middleName:"",
@@ -2457,7 +2457,7 @@ people = [
         infoText:""
     },
     {
-        id:90,
+        id:91,
         tree_id:"1-9-1-6-2-2",
         firstName:"William",
         middleName:"",
@@ -2484,9 +2484,9 @@ people = [
         infoText:""
     },
     {
-        id:91,
+        id:92,
         tree_id:"1-9-1-6-3-1",
-        firstName:"Sofia/Sofie",
+        firstName:"Sofie",
         middleName:"",
         lastName:"Fjellkårstad",
         middleNameShort:"",
@@ -2511,7 +2511,7 @@ people = [
         infoText:""
     },
     {
-        id:92,
+        id:93,
         tree_id:"1-9-1-6-3-2",
         firstName:"Georg",
         middleName:"",
@@ -2526,6 +2526,33 @@ people = [
         dead:false,
         motherBiological_id:null,
         fatherBiological_id:66,
+        otherMother_id:null,
+        otherFather_id:null,
+        children_id:[],
+        married:null,
+        spouse_id:null,
+        marriedYear:null,
+        city:null,
+        sex:null,
+        img_url:null,
+        infoText:""
+    },
+    {
+        id:94,
+        tree_id:"1-9-1-6-1-1",
+        firstName:"Ingrid",
+        middleName:"",
+        lastName:"",
+        middleNameShort:"",
+        nickname:"",
+        lastNameFromBirth:"",
+        yearBorn:null,
+        yearBornSource:null,
+        yearDied:null,
+        yearDiedSource:null,
+        dead:false,
+        motherBiological_id:null,
+        fatherBiological_id:64,
         otherMother_id:null,
         otherFather_id:null,
         children_id:[],
