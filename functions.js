@@ -24,6 +24,9 @@ function getName_FirstAndMiddleShort(id) {
 }
 
 // Functions for name based on tree-placement
+function id_to_treeId(id) {
+    return people[id].tree_id;
+}
 function treeId_to_Id(treeId) {
     for (let i = 0; i < people.length; i++) {
         if (people[i].tree_id.valueOf() == treeId.valueOf()) {
@@ -68,7 +71,26 @@ function getMainImg_treeId(treeId) {
     }
     return getMainImg(id);
 }
+function getImgByValue(id,v) {
+    if (id === null || people[id].img_url === null || people[id].img_url.length < v) {
+        return null;
+    }
+    return people[id].img_url[v-1];
+}
+function getImgByValue_treeId(treeId,v) {
+    var id = treeId_to_Id(treeId);
+    if (id === null) {
+        return null;
+    }
+    return getImgByValue(id,v);
+}
 
+function getAllImages(id) {
+    return people[id].img_url;
+}
+function getAllImages_treeId(tree_id) {
+    return getAllImages(treeId_to_Id(tree_id));
+}
 // Functions for years: birth and died
 function getYears_BornAndDied(id) {
     var out = "";

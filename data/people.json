@@ -2183,15 +2183,16 @@ people = [
         marriedYear:null,
         city:"Oslo/Nittedal",
         sex:"F",
-        img_url:null,
-        infoText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam molestie cursus. Vestibulum volutpat risus dolor, sit amet sollicitudin est hendrerit in. Donec sollicitudin faucibus mauris sed facilisis. Quisque aliquam elit et ex varius, at tristique felis pulvinar. Suspendisse eu bibendum turpis, sed laoreet risus. Quisque posuere interdum erat, at mattis metus bibendum eget. Proin ultrices odio orci, sit amet interdum lorem fermentum eget. Nulla congue blandit nibh, a mollis mi mattis nec. Maecenas sapien ante, ullamcorper at lobortis quis, fringilla ut mauris. Morbi porttitor velit elit, non vulputate elit posuere ut. \
+        img_url:["../img/KristineMainImg.jpg","../img/KristineImg2.jpg"],
+        infoText:"<h3>Oppvekst</h3> \
+        Kristine ble født i Oslo og vokste opp i Nittedal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam molestie cursus. Vestibulum volutpat risus dolor, sit amet sollicitudin est hendrerit in. Donec sollicitudin faucibus mauris sed facilisis. Quisque aliquam elit et ex varius, at tristique felis pulvinar. Suspendisse eu bibendum turpis, sed laoreet risus. Quisque posuere interdum erat, at mattis metus bibendum eget. Proin ultrices odio orci, sit amet interdum lorem fermentum eget. Nulla congue blandit nibh, a mollis mi mattis nec. Maecenas sapien ante, ullamcorper at lobortis quis, fringilla ut mauris. Morbi porttitor velit elit, non vulputate elit posuere ut. \
         <br><br> \
         Duis ullamcorper porta erat. Nam mollis justo id molestie viverra. Morbi aliquam non nibh iaculis molestie. Donec sollicitudin sed risus eu aliquet. Integer eu metus felis. Etiam vel tellus sit amet nisi scelerisque ornare. Maecenas ut malesuada augue. Nam hendrerit mollis mi, non dignissim lorem rhoncus in. Sed varius nec urna ut fermentum. Quisque egestas varius arcu, gravida bibendum ipsum condimentum quis. Cras lacinia dolor non egestas rhoncus. Sed hendrerit convallis est, sed finibus sapien hendrerit at. Ut ac sem ut magna dictum interdum consectetur sed nunc. Fusce ex eros, consectetur ut sollicitudin fringilla, efficitur eget turpis. Suspendisse mollis, dui eu pretium feugiat, orci metus bibendum augue, quis porttitor ante erat quis lacus. Praesent malesuada facilisis dolor, id faucibus nisl consectetur ut. \
-        <br><br> \
+        <h3>Familie</h3> \
         Vivamus ac ipsum ut urna consequat bibendum. Aenean non mi vel odio molestie scelerisque. Sed et odio bibendum, elementum nisi et, imperdiet diam. Curabitur ut purus tellus. Cras vitae ligula in enim luctus efficitur vel sed nibh. Vestibulum suscipit vel justo sed posuere. Phasellus quis eleifend lacus, id viverra felis. Praesent posuere fringilla ante, at imperdiet risus sagittis in. Maecenas scelerisque odio non lorem mollis, a bibendum nisi pulvinar. Nunc maximus dignissim gravida. Aenean volutpat mattis lectus, non dapibus tellus luctus sed. Quisque vel vulputate mi, auctor porttitor augue. Duis eget est ante. Nunc fermentum felis augue, et fringilla libero semper et. Cras et sapien eget lectus sodales tempor. \
         <br><br> \
         Phasellus consectetur purus urna, non sodales mauris placerat eu. Vivamus et interdum lectus. Donec purus dolor, gravida id pellentesque vel, cursus nec lacus. Praesent fringilla consectetur quam, facilisis pretium eros aliquet ac. Integer aliquet urna vitae volutpat fringilla. Mauris ut enim nulla. Morbi at ullamcorper arcu, vitae euismod neque. Vestibulum commodo lacinia placerat. \
-        <br><br> \
+        <h3>Yrkesliv</h3> \
         Curabitur condimentum mi faucibus, varius turpis in, mattis tellus. Donec tristique turpis sed laoreet sollicitudin. Vestibulum placerat maximus venenatis. Sed tristique tempor augue non viverra. Morbi volutpat ligula ex. Aenean leo sapien, blandit vitae tristique quis, interdum nec nulla. Mauris pretium pulvinar mauris id molestie. Quisque pulvinar libero vitae massa gravida blandit. Aenean imperdiet egestas libero, et feugiat dui vestibulum at."
     },
     {

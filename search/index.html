@@ -59,7 +59,7 @@
                     for (let id = 0; id < people.length; id++) {
                         for (let t = 0; t < searchword_lst.length; t++) {
                             if (getName_Full(id).toLowerCase().includes(searchword_lst[t])) {
-                                elem.innerHTML += "<a href='../people/index.html?id="+id+"'>"
+                                elem.innerHTML += "<a href='../people/index.html?id="+id_to_treeId(id)+"'>"
                                 +getName_Full(id)+": "+getYears_BornAndDied(id)+"</a><br>";
                             }
                         }
