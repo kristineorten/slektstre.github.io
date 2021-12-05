@@ -690,13 +690,9 @@
             for (let i = 2; i < people.length; i++) {
                 var elem = document.getElementById(i);
                 var id = elem.elements["id"].value;
-                var img = getMainImg_treeId(id);
                 var dead = isDead_treeId(id);
 
                 elem.elements["submit"].value = getName_AlmostFull_treeId(id);
-                if (img !== null) {
-                    elem.innerHTML = "<img src=\""+img+"\"></img><p>"+elem.innerHTML;
-                }
 
                 if (dead) {
                     //elem.innerHTML = "<i class='fa fa-star'></i><p>"+elem.innerHTML;

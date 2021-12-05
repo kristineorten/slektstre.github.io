@@ -2183,7 +2183,7 @@ people = [
         marriedYear:null,
         city:"Oslo/Nittedal",
         sex:"F",
-        img_url:["../img/KristineMainImg.jpg","../img/KristineImg2.jpg"],
+        img_url:["img/KristineMainImg.jpg","img/KristineImg2.jpg"],
         infoText:"<h3>Oppvekst</h3> \
         Kristine ble født i Oslo og vokste opp i Nittedal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam molestie cursus. Vestibulum volutpat risus dolor, sit amet sollicitudin est hendrerit in. Donec sollicitudin faucibus mauris sed facilisis. Quisque aliquam elit et ex varius, at tristique felis pulvinar. Suspendisse eu bibendum turpis, sed laoreet risus. Quisque posuere interdum erat, at mattis metus bibendum eget. Proin ultrices odio orci, sit amet interdum lorem fermentum eget. Nulla congue blandit nibh, a mollis mi mattis nec. Maecenas sapien ante, ullamcorper at lobortis quis, fringilla ut mauris. Morbi porttitor velit elit, non vulputate elit posuere ut. \
         <br><br> \

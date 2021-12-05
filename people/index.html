@@ -79,11 +79,11 @@
             document.getElementById("write").innerHTML = text;
 
             var img = getMainImg_treeId(tree_id);
-            document.getElementById("img").innerHTML = "<img src="+img+">";
+            document.getElementById("img").innerHTML = "<img src=../"+img+">";
 
             var allImgs = getAllImages_treeId(tree_id);
             for (var i = 1; i < allImgs.length; i++) {
-                document.getElementById("imgs").innerHTML += "<img src="+allImgs[i]+">";
+                document.getElementById("imgs").innerHTML += "<img src=../"+allImgs[i]+">";
             }
         </script>
     </body>
