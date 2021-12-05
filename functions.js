@@ -101,3 +101,15 @@ function isDead(id) {
 function isDead_treeId(tree_id) {
     return isDead(treeId_to_Id(tree_id))
 }
+
+// Get text
+function getInfoText(id) {
+    if (id === null) {
+        return null;
+    }
+    return people[id].infoText;
+}
+
+function getInfoText_treeId(tree_id) {
+    return getInfoText(treeId_to_Id(tree_id));
+}
