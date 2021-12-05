@@ -135,3 +135,63 @@ function getInfoText(id) {
 function getInfoText_treeId(tree_id) {
     return getInfoText(treeId_to_Id(tree_id));
 }
+
+
+// children
+function getChildren(id) {
+    return people[id].children_id;
+}
+function getChildren_treeId(tree_id) {
+    return getChildren(treeId_to_Id(tree_id));
+}
+
+// Building the tree
+function buildtree() {
+    var name = getName_FirstAndMiddleShort(0)+" og "+getName_AlmostFull(1);
+    var img = "<img src=\""+getMainImg(0)+"\"></img><p>";
+    document.getElementById("home").innerHTML += buildtree_r(name,1,"1",1,"id='wrapper'",img);
+}
+
+function buildtree_r(name,i,treeId,lvl,classInfo,img) { /*lvl is the lvl of children*/
+    var html = "";
+    var dead = isDead_treeId(treeId);
+    if (name === "") {
+        name = getName_AlmostFull_treeId(treeId);
+    }
+    html += "<div "+classInfo+"><span class='label'> \
+            <form action='people/index.html' method=GET id="+i+"> \
+                <input type='hidden' name='id' value='"+treeId+"'/> \
+                <button type='submit' name='submit' value='submit'/>";
+    if (img !== null) {
+        html += img;
+    }
+    if (dead) {
+        html += "<i class='fas fa-cross'></i><br>";
+    }
+    html +=     name;
+    html +=     "</button></form></span>";
+
+    var children = getChildren_treeId(treeId);
+    //var children = test[i].children;
+    var childClassInfo = "class='entry";
+    console.log(children.length);
+    if (children.length > 0) {
+        html += "<div class='branch lv"+lvl+"'>";
+        if (children.length == 1) {
+            childClassInfo += " sole'";
+        } else {
+            childClassInfo += "'";
+        }
+        for (let t = 0; t < children.length; t++) {
+            console.log("hei"+t+" ? "+children.length);
+            console.log(childClassInfo);
+            html += buildtree_r("",children[t],treeId+"-"+(t+1),lvl+1,childClassInfo,null);
+            console.log("t:"+t);
+        }
+        html += "</div>";
+    }
+
+    // Ending the wrapper-div
+    html += "</div>";
+    return html;
+}
