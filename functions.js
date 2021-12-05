@@ -149,17 +149,19 @@ function getChildren_treeId(tree_id) {
 function buildtree() {
     var name = getName_FirstAndMiddleShort(0)+" og "+getName_AlmostFull(1);
     var img = "<img src=\""+getMainImg(0)+"\"></img><p>";
-    document.getElementById("home").innerHTML += buildtree_r(name,1,"1",1,"id='wrapper'",img);
+    document.getElementById("home").innerHTML += buildtree_r(name,"1",1,"id='wrapper'",img);
 }
 
-function buildtree_r(name,i,treeId,lvl,classInfo,img) { /*lvl is the lvl of children*/
+function buildtree_r(name,treeId,lvl,classInfo,img) { /*lvl is the lvl of children*/
+    console.log(treeId);
     var html = "";
+    var id = treeId_to_Id(treeId);
     var dead = isDead_treeId(treeId);
     if (name === "") {
         name = getName_AlmostFull_treeId(treeId);
     }
     html += "<div "+classInfo+"><span class='label'> \
-            <form action='people/index.html' method=GET id="+i+"> \
+            <form action='people/index.html' method=GET id="+id+"> \
                 <input type='hidden' name='id' value='"+treeId+"'/> \
                 <button type='submit' name='submit' value='submit'/>";
     if (img !== null) {
@@ -172,6 +174,7 @@ function buildtree_r(name,i,treeId,lvl,classInfo,img) { /*lvl is the lvl of chil
     html +=     "</button></form></span>";
 
     var children = getChildren_treeId(treeId);
+    console.log(children);
     //var children = test[i].children;
     var childClassInfo = "class='entry";
     console.log(children.length);
@@ -183,10 +186,7 @@ function buildtree_r(name,i,treeId,lvl,classInfo,img) { /*lvl is the lvl of chil
             childClassInfo += "'";
         }
         for (let t = 0; t < children.length; t++) {
-            console.log("hei"+t+" ? "+children.length);
-            console.log(childClassInfo);
-            html += buildtree_r("",children[t],treeId+"-"+(t+1),lvl+1,childClassInfo,null);
-            console.log("t:"+t);
+            html += buildtree_r("",treeId+"-"+(t+1),lvl+1,childClassInfo,null);
         }
         html += "</div>";
     }
