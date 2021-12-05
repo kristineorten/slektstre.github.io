@@ -51,7 +51,7 @@
 span img {
 	height: auto;
     width: auto;
-    max-width: 113px;
+    max-width: 125px;
     max-height: 300px;
 }
 
@@ -76,6 +76,7 @@ button {
 	white-space: normal;
 	/*word-wrap: break-word;*/
 	overflow-wrap: break-word;
+	padding: 0;
 }
 
 /*Probably not in use*/
