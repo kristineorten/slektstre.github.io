@@ -136,6 +136,20 @@ function getInfoText_treeId(tree_id) {
     return getInfoText(treeId_to_Id(tree_id));
 }
 
+function getBirthYear(id) {
+    return people[id].yearBorn;
+}
+function getDeathYear(id) {
+    if (isDead(id) && (people[id].yearDied !== null)) {
+        return people[id].yearDied;
+    }
+    return "";
+}
+function getTown(id) {
+    return people[id].city;
+}
+
+
 
 // children
 function getChildren(id) {

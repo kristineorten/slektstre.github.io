@@ -47,7 +47,11 @@
                         <h2 id="header2">Navn</h2>
                         <p id="write">My first paragraph.</p>
                     </div>
-                    <div class="image" id="img"></div>
+                    <div class="sidebar">
+                        <div id="img"></div>
+                        <h4>Informasjon</h4>
+                        <p id="facts"></p>
+                    </div>
                     <div class="extra_images">
                         <h3>Bilder</h3>
                         <div class="images" id="imgs">
@@ -67,16 +71,15 @@
 
         <!--Get id and change elems-->
         <script>
-            var elem = document.getElementById("write");
             var tree_id = location.search.split("&")[0].split("=")[1];
-            elem.innerHTML = "Denne personen har id: "+tree_id;
+            var id = treeId_to_Id(tree_id);
 
             var name = getName_Full_treeId(tree_id);
             document.getElementById("header").innerHTML = name;
             document.getElementById("header2").innerHTML = name;
 
             var text = getInfoText_treeId(tree_id);
-            document.getElementById("write").innerHTML = text;
+            document.getElementById("write").innerHTML = getYears_BornAndDied(id)+text;
 
             var img = getMainImg_treeId(tree_id);
             document.getElementById("img").innerHTML = "<img src=../"+img+">";
@@ -85,6 +88,14 @@
             for (let i = 1; i < allImgs.length; i++) {
                 document.getElementById("imgs").innerHTML += "<img src=../"+allImgs[i]+">";
             }
+
+            document.getElementById("facts").innerHTML = " \
+                <ul> \
+                    <li>Født: "+getBirthYear(id)+"</li> \
+                    <li>Død: "+getDeathYear(id)+"</li> \
+                    <li>Bosted: "+getTown(id)+"</li> \
+                </ul>";
+
         </script>
     </body>
 </html>

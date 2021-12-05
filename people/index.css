@@ -21,14 +21,27 @@
   font-size: 30px;*/
 }
 
+/*
+1            2      3
++------------+------+ 1
+| text       | side |
++------------+------+ 2
+| images            |
++-------------------+ 3
+*/
+
 .text {
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
-.image {
+.sidebar {
   grid-column-start: 2;
   grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .extra_images {
