@@ -55,6 +55,7 @@ span img {
     max-height: 300px;
 }
 
+/*Probably not in use*/
 input[type=submit] {
     border: 0 none; /*Remove border*/
     background-color: white;/*blue;*/
@@ -77,6 +78,7 @@ button {
 	overflow-wrap: break-word;
 }
 
+/*Probably not in use*/
 input[type=submit]:hover {
     cursor: pointer;
 }
